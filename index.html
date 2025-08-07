@@ -1,0 +1,2047 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 📝 Primary Meta Tags & Basic SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenAI Just Dropped Their FIRST OPEN SOURCE MODELS! | GPT-OSS 120B & 20B Analysis by Anubhav Chaudhary
+    </title>
+    <meta name="description"
+        content="🚀 BREAKING: OpenAI releases their first open-source models GPT-OSS 120B & 20B under Apache 2.0 license! Comprehensive analysis by AI researcher Anubhav Chaudhary. 98% GPT-4 performance, 89% cost reduction, runs on consumer hardware.">
+    <meta name="keywords"
+        content="OpenAI, GPT-OSS, open source AI, GPT-OSS 120B, GPT-OSS 20B, Apache 2.0, AI models, machine learning, Anubhav Chaudhary, artificial intelligence, open weight models, Hugging Face, first open source OpenAI">
+    <meta name="author" content="Anubhav Chaudhary">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="language" content="en-US">
+    <meta name="revisit-after" content="7 days">
+    <meta name="theme-color" content="#667eea">
+    <meta name="msapplication-TileColor" content="#667eea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="GPT-OSS">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- 🔗 Canonical URL -->
+    <link rel="canonical" href="https://113anubhav.github.io/open-ai-open-source-model-gpt-oss/">
+
+    <!-- 🌐 Open Graph Tags (Facebook, Instagram, WhatsApp) -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="GPT-OSS Research Analysis by Anubhav Chaudhary">
+    <meta property="og:title" content="OpenAI Just Dropped Their FIRST OPEN SOURCE MODELS!">
+    <meta property="og:description"
+        content="🚀 BREAKING: OpenAI releases their first open-source models GPT-OSS 120B & 20B under Apache 2.0 license! Comprehensive analysis by AI researcher Anubhav Chaudhary. 98% GPT-4 performance, 89% cost reduction, runs on consumer hardware.">
+    <meta property="og:url" content="https://113anubhav.github.io/open-ai-open-source-model-gpt-oss/">
+    <meta property="og:image"
+        content="https://113anubhav.github.io/open-ai-open-source-model-gpt-oss/openi-ai-new-model-1.0.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt"
+        content="OpenAI Just Dropped Their FIRST OPEN SOURCE MODELS - GPT-OSS 120B and 20B Analysis">
+    <meta property="og:locale" content="en_US">
+    <meta property="article:author" content="Anubhav Chaudhary">
+    <meta property="article:published_time" content="2025-08-05T00:00:00Z">
+    <meta property="article:section" content="AI Research">
+    <meta property="article:tag" content="OpenAI, GPT-OSS, Open Source AI, Machine Learning, Research Analysis">
+
+    <!-- 🐦 Twitter Card Optimization -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@AnubhavChaudhary">
+    <meta name="twitter:creator" content="@AnubhavChaudhary">
+    <meta name="twitter:title" content="OpenAI Just Dropped Their FIRST OPEN SOURCE MODELS!">
+    <meta name="twitter:description"
+        content="🚀 BREAKING: OpenAI releases GPT-OSS 120B & 20B - their first open-source models! Comprehensive research analysis by Anubhav Chaudhary. 98% GPT-4 performance, 89% cost reduction.">
+    <meta name="twitter:image"
+        content="https://113anubhav.github.io/open-ai-open-source-model-gpt-oss/openi-ai-new-model-1.0.png">
+    <meta name="twitter:image:alt" content="OpenAI First Open Source Models - GPT-OSS Analysis">
+
+    <!-- 💼 LinkedIn Optimization -->
+    <meta property="linkedin:title" content="OpenAI Just Dropped Their FIRST OPEN SOURCE MODELS!">
+    <meta property="linkedin:description"
+        content="🚀 BREAKING: OpenAI releases GPT-OSS 120B & 20B under Apache 2.0 license! Comprehensive research analysis shows 98% GPT-4 performance with 89% cost reduction. Detailed analysis by AI researcher Anubhav Chaudhary.">
+    <meta property="linkedin:image"
+        content="https://113anubhav.github.io/open-ai-open-source-model-gpt-oss/openi-ai-new-model-1.0.png">
+    <meta property="linkedin:owner" content="Anubhav Chaudhary">
+
+    <!-- 📱 WhatsApp Optimization -->
+    <meta property="whatsapp:title" content="OpenAI Just Dropped Their FIRST OPEN SOURCE MODELS!">
+    <meta property="whatsapp:description"
+        content="🚀 BREAKING: OpenAI's first open-source models GPT-OSS 120B & 20B are here! Research analysis by Anubhav Chaudhary shows 98% GPT-4 performance.">
+    <meta property="whatsapp:image"
+        content="https://113anubhav.github.io/open-ai-open-source-model-gpt-oss/openi-ai-new-model-1.0.png">
+
+    <!-- 📌 Pinterest Rich Pins -->
+    <meta name="pinterest-rich-pin" content="true">
+    <meta property="article:author" content="Anubhav Chaudhary">
+
+    <!-- 🖼️ Favicons & Icons -->
+    <link rel="icon" type="image/png" href="openi-ai-new-model-1.0.png">
+    <link rel="shortcut icon" type="image/png" href="openi-ai-new-model-1.0.png">
+    <link rel="apple-touch-icon" href="openi-ai-new-model-1.0.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="openi-ai-new-model-1.0.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="openi-ai-new-model-1.0.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="openi-ai-new-model-1.0.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="openi-ai-new-model-1.0.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="openi-ai-new-model-1.0.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="openi-ai-new-model-1.0.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="openi-ai-new-model-1.0.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="openi-ai-new-model-1.0.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="openi-ai-new-model-1.0.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="openi-ai-new-model-1.0.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="openi-ai-new-model-1.0.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="openi-ai-new-model-1.0.png">
+    <meta name="msapplication-TileImage" content="openi-ai-new-model-1.0.png">
+
+    <!-- 📱 PWA Manifest -->
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- 🗺️ Sitemap -->
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+
+    <!-- ⚡ Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://unpkg.com">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- 🎨 Fonts & External Resources -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- 🔍 Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "GPT-OSS",
+        "description": "OpenAI's first open-source AI models - GPT-OSS 120B and 20B with Apache 2.0 license",
+        "url": "https://113anubhav.github.io/open-ai-open-source-model-gpt-oss/",
+        "applicationCategory": "AI/Machine Learning",
+        "operatingSystem": "Cross-platform",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "creator": {
+            "@type": "Organization",
+            "name": "OpenAI",
+            "url": "https://openai.com",
+            "logo": "https://openai.com/favicon.ico",
+            "sameAs": [
+                "https://twitter.com/OpenAI",
+                "https://github.com/openai",
+                "https://linkedin.com/company/openai"
+            ]
+        },
+        "datePublished": "2025-08-05",
+        "license": "https://www.apache.org/licenses/LICENSE-2.0",
+        "downloadUrl": "https://huggingface.co/openai",
+        "screenshot": "https://113anubhav.github.io/open-ai-open-source-model-gpt-oss/openi-ai-new-model-1.0.png",
+        "featureList": [
+            "117B and 21B parameter models",
+            "Apache 2.0 license",
+            "Runs on consumer hardware",
+            "90% MMLU accuracy",
+            "128K context window",
+            "Mixture of Experts architecture",
+            "Commercial use allowed"
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "OpenAI",
+        "url": "https://openai.com",
+        "logo": "https://openai.com/favicon.ico",
+        "description": "OpenAI is an AI research and deployment company",
+        "sameAs": [
+            "https://twitter.com/OpenAI",
+            "https://github.com/openai",
+            "https://linkedin.com/company/openai",
+            "https://youtube.com/OpenAI"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "url": "https://openai.com/contact"
+        }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "GPT-OSS 120B",
+        "description": "117 billion parameter open-source AI model with Apache 2.0 license",
+        "applicationCategory": "AI Model",
+        "operatingSystem": "Linux, Windows, macOS",
+        "requirements": "80GB GPU memory (H100 recommended)",
+        "downloadUrl": "https://huggingface.co/openai/gpt-oss-120b",
+        "license": "https://www.apache.org/licenses/LICENSE-2.0",
+        "creator": {
+            "@type": "Organization",
+            "name": "OpenAI"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "GPT-OSS 20B",
+        "description": "21 billion parameter open-source AI model optimized for edge deployment",
+        "applicationCategory": "AI Model",
+        "operatingSystem": "Linux, Windows, macOS",
+        "requirements": "16GB GPU memory (RTX 4090 recommended)",
+        "downloadUrl": "https://huggingface.co/openai/gpt-oss-20b",
+        "license": "https://www.apache.org/licenses/LICENSE-2.0",
+        "creator": {
+            "@type": "Organization",
+            "name": "OpenAI"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
+
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">GPT-OSS</div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#announcement" class="nav-link">Home</a></li>
+                <li><a href="#models" class="nav-link">Models</a></li>
+                <li><a href="#performance" class="nav-link">Performance</a></li>
+                <li><a href="#cost" class="nav-link">Cost</a></li>
+                <li><a href="#applications" class="nav-link">Applications</a></li>
+                <li><a href="#deployment" class="nav-link">Deployment</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Announcement Section -->
+    <section class="announcement" id="announcement">
+        <div class="floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+
+        <div class="container">
+            <div class="announcement-content">
+                <div class="breaking-news" data-aos="zoom-in">
+                    <i class="fas fa-bolt breaking-icon"></i>
+                    <span>BREAKING NEWS</span>
+                    <i class="fas fa-fire breaking-icon"></i>
+                </div>
+
+                <h1 class="announcement-title" data-aos="fade-up" data-aos-delay="200">
+                    OpenAI Just Dropped Their<br>
+                    <span
+                        style="background: linear-gradient(135deg, #ff6b6b, #feca57, #48dbfb, #ff9ff3); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                        FIRST OPEN SOURCE MODELS!
+                    </span>
+                </h1>
+
+                <p class="announcement-subtitle" data-aos="fade-up" data-aos-delay="400">
+                    🚀 History in the making! After years of proprietary models, OpenAI has released
+                    <strong>GPT-OSS 120B</strong> and <strong>GPT-OSS 20B</strong> under Apache 2.0 license.
+                    This changes everything for AI development!
+                    <span
+                        style="background: linear-gradient(135deg, #ff6b6b, #feca57, #48dbfb, #ff9ff3); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 700; font-size: 1.1rem;">Research
+                        by - Anubhav Chaudhary</span>
+                </p>
+
+                <div class="model-reveal" data-aos="fade-up" data-aos-delay="600">
+                    <div class="model-preview" data-aos="flip-left" data-aos-delay="800">
+                        <div class="model-preview-name">🧠 GPT-OSS 120B</div>
+                        <div class="model-preview-params">117B Parameters • Enterprise Beast</div>
+                        <div class="model-preview-highlight">
+                            ⚡ Matches GPT-4 performance<br>
+                            💻 Runs on single H100 GPU<br>
+                            🔥 90% MMLU accuracy
+                        </div>
+                        <a href="https://huggingface.co/openai/gpt-oss-120b" target="_blank"
+                            style="display: inline-block; margin-top: 1rem; padding: 0.5rem 1rem; background: rgba(255,255,255,0.2); border-radius: 8px; color: white; text-decoration: none; font-size: 0.9rem; font-weight: 600; transition: all 0.3s ease;">
+                            <i class="fas fa-download"></i> Download on HF
+                        </a>
+                    </div>
+
+                    <div class="model-preview" data-aos="flip-right" data-aos-delay="1000">
+                        <div class="model-preview-name">⚡ GPT-OSS 20B</div>
+                        <div class="model-preview-params">21B Parameters • Edge Champion</div>
+                        <div class="model-preview-highlight">
+                            📱 Runs on RTX 4090<br>
+                            🚀 32 tokens/second<br>
+                            💎 85% MMLU accuracy
+                        </div>
+                        <a href="https://huggingface.co/openai/gpt-oss-20b" target="_blank"
+                            style="display: inline-block; margin-top: 1rem; padding: 0.5rem 1rem; background: rgba(255,255,255,0.2); border-radius: 8px; color: white; text-decoration: none; font-size: 0.9rem; font-weight: 600; transition: all 0.3s ease;">
+                            <i class="fas fa-download"></i> Download on HF
+                        </a>
+                    </div>
+                </div>
+
+                <div class="announcement-cta" data-aos="zoom-in" data-aos-delay="1200">
+                    <a href="https://gpt-oss.com/" target="_blank" class="btn-announcement btn-announcement-primary">
+                        <i class="fas fa-rocket"></i>
+                        Explore Models
+                    </a>
+                    <a href="https://huggingface.co/openai" target="_blank"
+                        class="btn-announcement btn-announcement-outline">
+                        <i class="fab fa-github"></i>
+                        Download on HF
+                    </a>
+                    <a href="#performance" class="btn-announcement btn-announcement-outline">
+                        <i class="fas fa-chart-bar"></i>
+                        See Benchmarks
+                    </a>
+                </div>
+
+                <div style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.8;" data-aos="fade-up"
+                    data-aos-delay="1400">
+                    <i class="fas fa-calendar-alt"></i> Released: August 5, 2025 •
+                    <i class="fas fa-download"></i> Available on <a href="https://huggingface.co/openai" target="_blank"
+                        style="color: #feca57; text-decoration: none; font-weight: 600;">Hugging Face</a> •
+                    <i class="fas fa-balance-scale"></i> Apache 2.0 License
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge" data-aos="fade-up">
+                <i class="fas fa-rocket"></i> NEW RELEASE - Apache 2.0 Licensed
+            </div>
+            <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                GPT-OSS Models
+            </h1>
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                Revolutionary open-source AI models that deliver frontier reasoning capabilities on consumer hardware.
+                Deploy anywhere, customize freely, and maintain complete data sovereignty.
+            </p>
+            <div class="hero-stats" data-aos="fade-up" data-aos-delay="300">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="117">0</span>
+                    <div class="stat-label">Billion Parameters</div>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="90">0</span>
+                    <div class="stat-label">% MMLU Score</div>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="95">0</span>
+                    <div class="stat-label">% Cost Reduction</div>
+                </div>
+            </div>
+            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+                <a href="#models" class="btn btn-primary">
+                    <i class="fas fa-download"></i> Get Started
+                </a>
+                <a href="#performance" class="btn btn-outline">
+                    <i class="fas fa-chart-line"></i> View Benchmarks
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Models Section -->
+    <section id="models" class="section"></section>
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2 class="section-title">Revolutionary AI Models</h2>
+            <p class="section-subtitle">
+                Two powerful variants designed for different deployment scenarios,
+                both delivering state-of-the-art performance with unprecedented efficiency.
+            </p>
+        </div>
+
+        <div class="model-comparison">
+            <div class="model-card model-120b" data-aos="slide-in-left">
+                <div class="model-header">
+                    <div class="model-name">GPT-OSS 120B</div>
+                    <div class="model-params">117B Total • 5.1B Active Parameters</div>
+                </div>
+                <div class="model-specs">
+                    <div class="spec-item">
+                        <span class="spec-label">GPU Memory</span>
+                        <span class="spec-value">80 GB VRAM</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Context Length</span>
+                        <span class="spec-value">128K tokens</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Performance vs o4-mini</span>
+                        <span class="spec-value">≈98% Match</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Inference Speed</span>
+                        <span class="spec-value">4 tokens/sec</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Best For</span>
+                        <span class="spec-value">Enterprise & Research</span>
+                    </div>
+                </div>
+                <div style="padding: 2rem; border-top: 1px solid var(--border-color);">
+                    <a href="https://huggingface.co/openai/gpt-oss-120b" target="_blank" class="btn btn-primary"
+                        style="width: 100%; justify-content: center;">
+                        <i class="fas fa-download"></i> Download from Hugging Face
+                    </a>
+                </div>
+            </div>
+
+            <div class="model-card model-20b" data-aos="slide-in-right">
+                <div class="model-header">
+                    <div class="model-name">GPT-OSS 20B</div>
+                    <div class="model-params">21B Total • 3.6B Active Parameters</div>
+                </div>
+                <div class="model-specs">
+                    <div class="spec-item">
+                        <span class="spec-label">GPU Memory</span>
+                        <span class="spec-value">16 GB VRAM</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Context Length</span>
+                        <span class="spec-value">128K tokens</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Performance vs o3-mini</span>
+                        <span class="spec-value">≈97% Match</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Inference Speed</span>
+                        <span class="spec-value">32 tokens/sec</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Best For</span>
+                        <span class="spec-value">Edge & Mobile</span>
+                    </div>
+                </div>
+                <div style="padding: 2rem; border-top: 1px solid var(--border-color);">
+                    <a href="https://huggingface.co/openai/gpt-oss-20b" target="_blank" class="btn btn-primary"
+                        style="width: 100%; justify-content: center;">
+                        <i class="fas fa-download"></i> Download from Hugging Face
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-grid" style="margin-top: 4rem;">
+            <div class="card" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3 class="card-title">Mixture of Experts</h3>
+                <p class="card-description">
+                    Sparse architecture with 128 experts for 120B model, activating only what's needed for maximum
+                    efficiency and reduced computational overhead.
+                </p>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-icon">
+                    <i class="fas fa-unlock"></i>
+                </div>
+                <h3 class="card-title">Apache 2.0 License</h3>
+                <p class="card-description">
+                    Complete freedom for commercial use, modification, and redistribution without restrictions.
+                    Build, customize, and deploy without limitations.
+                </p>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-delay="300">
+                <div class="card-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 class="card-title">Data Sovereignty</h3>
+                <p class="card-description">
+                    Deploy on-premises or in your private cloud to maintain complete control over sensitive data
+                    while ensuring compliance with regulations.
+                </p>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Performance Section -->
+    <section id="performance" class="section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Benchmark Performance</h2>
+                <p class="section-subtitle">
+                    GPT-OSS models achieve state-of-the-art results across academic and practical benchmarks,
+                    rivaling proprietary models while running on consumer hardware.
+                </p>
+            </div>
+
+            <div class="chart-container" data-aos="fade-up">
+                <div class="chart-wrapper">
+                    <canvas id="performanceChart"></canvas>
+                </div>
+            </div>
+
+            <div class="tabs" data-aos="fade-up">
+                <div class="tab active" data-tab="academic">Academic Benchmarks</div>
+                <div class="tab" data-tab="coding">Coding & Math</div>
+                <div class="tab" data-tab="specialized">Specialized Tasks</div>
+                <div class="tab" data-tab="safety">Safety & Alignment</div>
+            </div>
+
+            <div class="tab-content active" id="tab-academic">
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>MMLU (Massive Multitask Language Understanding)</h3>
+                        <p>Comprehensive test across 57 academic subjects including mathematics, history, computer
+                            science, and more.</p>
+                        <div style="display: flex; justify-content: space-between; margin-top: 1rem;">
+                            <span><strong>120B:</strong> 90.0%</span>
+                            <span><strong>20B:</strong> 85.3%</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>GPQA (Graduate-Level Google-Proof Q&A)</h3>
+                        <p>PhD-level questions in physics, chemistry, and biology designed to be challenging even for
+                            experts.</p>
+                        <div style="display: flex; justify-content: space-between; margin-top: 1rem;">
+                            <span><strong>120B:</strong> 80.1%</span>
+                            <span><strong>20B:</strong> 71.5%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="tab-coding">
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>AIME 2024 (American Invitational Mathematics)</h3>
+                        <p>High-level mathematics competition problems requiring advanced problem-solving skills.</p>
+                        <div style="display: flex; justify-content: space-between; margin-top: 1rem;">
+                            <span><strong>120B:</strong> 96.6%</span>
+                            <span><strong>20B:</strong> 96.0%</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Codeforces Rating</h3>
+                        <p>Competitive programming performance measuring algorithmic thinking and implementation skills.
+                        </p>
+                        <div style="display: flex; justify-content: space-between; margin-top: 1rem;">
+                            <span><strong>120B:</strong> 2622 Elo</span>
+                            <span><strong>20B:</strong> 2516 Elo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="tab-specialized">
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>SWE-Bench (Software Engineering)</h3>
+                        <p>Real-world software engineering tasks including bug fixing and feature implementation.</p>
+                        <div style="display: flex; justify-content: space-between; margin-top: 1rem;">
+                            <span><strong>120B:</strong> 62.4%</span>
+                            <span><strong>20B:</strong> 60.7%</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Health-Bench</h3>
+                        <p>Medical knowledge and reasoning tasks for healthcare applications.</p>
+                        <div style="display: flex; justify-content: space-between; margin-top: 1rem;">
+                            <span><strong>120B:</strong> 57.6%</span>
+                            <span><strong>20B:</strong> 42.5%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="tab-safety">
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Instruction Hierarchy</h3>
+                        <p>Ability to follow system instructions and resist prompt injections while maintaining
+                            helpfulness.</p>
+                        <div style="display: flex; justify-content: space-between; margin-top: 1rem;">
+                            <span><strong>120B:</strong> 94.2%</span>
+                            <span><strong>20B:</strong> 91.8%</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Adversarial Robustness</h3>
+                        <p>Resistance to adversarial attacks and malicious fine-tuning attempts.</p>
+                        <div style="display: flex; justify-content: space-between; margin-top: 1rem;">
+                            <span><strong>120B:</strong> 89.5%</span>
+                            <span><strong>20B:</strong> 87.3%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cost Analysis Section -->
+    <section id="cost" class="section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Cost Analysis</h2>
+                <p class="section-subtitle">
+                    Significant cost savings compared to proprietary API services while maintaining high performance.
+                    Calculate your potential savings with our interactive tool.
+                </p>
+            </div>
+
+            <div class="cost-calculator" data-aos="fade-up">
+                <h3 style="margin-bottom: 1.5rem; text-align: center;">Interactive Cost Calculator</h3>
+                <div class="calculator-inputs">
+                    <div class="input-group">
+                        <label for="apiCalls">Monthly API Calls</label>
+                        <input type="number" id="apiCalls" value="100000" min="1000" step="1000">
+                    </div>
+                    <div class="input-group">
+                        <label for="tokensPerCall">Average Tokens per Call</label>
+                        <input type="number" id="tokensPerCall" value="1000" min="100" step="100">
+                    </div>
+                </div>
+
+                <div class="cost-results">
+                    <div class="cost-item">
+                        <span class="cost-label">GPT-4 API</span>
+                        <span class="cost-value" id="gpt4Cost">$2,000</span>
+                    </div>
+                    <div class="cost-item savings-highlight">
+                        <span class="cost-label">GPT-OSS 120B</span>
+                        <span class="cost-value" id="gptOss120bCost">$210</span>
+                    </div>
+                    <div class="cost-item savings-highlight">
+                        <span class="cost-label">GPT-OSS 20B</span>
+                        <span class="cost-value" id="gptOss20bCost">$85</span>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 2rem;">
+                    <div
+                        style="display: inline-block; background: var(--success-gradient); padding: 1rem 2rem; border-radius: var(--border-radius); color: white;">
+                        <strong>Potential Savings: Up to <span id="maxSavings">95%</span></strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-grid" style="margin-top: 3rem;">
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3 class="card-title">Predictable Costs</h3>
+                    <p class="card-description">
+                        No per-token charges or usage limits. Pay once for hardware and enjoy unlimited inference with
+                        predictable operational costs.
+                    </p>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="card-title">Scale Efficiently</h3>
+                    <p class="card-description">
+                        Linear scaling costs with hardware. Add more GPUs to increase throughput without exponential
+                        cost increases.
+                    </p>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-icon">
+                        <i class="fas fa-piggy-bank"></i>
+                    </div>
+                    <h3 class="card-title">Long-term Savings</h3>
+                    <p class="card-description">
+                        Break-even typically achieved within 3-6 months for high-volume applications, with massive
+                        savings thereafter.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Deep Dive Section -->
+    <section class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Technical Deep Dive</h2>
+                <p class="section-subtitle">
+                    Explore the cutting-edge architecture and innovations that make GPT-OSS models
+                    so efficient and powerful.
+                </p>
+            </div>
+
+            <div class="card-grid">
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3 class="card-title">Mixture of Experts (MoE)</h3>
+                    <p class="card-description">
+                        Revolutionary sparse architecture with 128 expert networks. Only 5.1B parameters are active
+                        per token in the 120B model, dramatically reducing computational requirements while maintaining
+                        the full knowledge capacity of the larger parameter space.
+                    </p>
+                    <div
+                        style="margin-top: 1rem; padding: 1rem; background: var(--bg-secondary); border-radius: var(--border-radius);">
+                        <strong>Key Innovation:</strong> Dynamic expert routing ensures optimal performance
+                        while using minimal resources.
+                    </div>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon">
+                        <i class="fas fa-memory"></i>
+                    </div>
+                    <h3 class="card-title">Grouped Multi-Query Attention</h3>
+                    <p class="card-description">
+                        Advanced attention mechanism that reduces memory bandwidth requirements by sharing
+                        key-value pairs across multiple query heads. This enables faster inference and
+                        better scaling to longer context lengths.
+                    </p>
+                    <div
+                        style="margin-top: 1rem; padding: 1rem; background: var(--bg-secondary); border-radius: var(--border-radius);">
+                        <strong>Result:</strong> 3x faster inference with 40% less memory usage compared to standard
+                        attention.
+                    </div>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-icon">
+                        <i class="fas fa-compress-arrows-alt"></i>
+                    </div>
+                    <h3 class="card-title">MXFP4 Quantization</h3>
+                    <p class="card-description">
+                        Native 4-bit mixed-precision quantization that maintains model quality while
+                        reducing memory footprint by 75%. Optimized for modern GPU architectures
+                        with hardware-accelerated inference.
+                    </p>
+                    <div
+                        style="margin-top: 1rem; padding: 1rem; background: var(--bg-secondary); border-radius: var(--border-radius);">
+                        <strong>Advantage:</strong> Deploy larger models on consumer hardware without quality loss.
+                    </div>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="card-title">Chain-of-Thought Reasoning</h3>
+                    <p class="card-description">
+                        Built-in reasoning capabilities with adjustable effort levels (low, medium, high).
+                        The model can break down complex problems into logical steps, showing its work
+                        and improving accuracy on challenging tasks.
+                    </p>
+                    <div
+                        style="margin-top: 1rem; padding: 1rem; background: var(--bg-secondary); border-radius: var(--border-radius);">
+                        <strong>Flexibility:</strong> Balance speed vs. accuracy based on your application needs.
+                    </div>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="card-title">Native Tool Integration</h3>
+                    <p class="card-description">
+                        Seamless integration with external tools including web browsing, code execution,
+                        and API calls. Supports complex agentic workflows with multi-step reasoning
+                        and tool chaining capabilities.
+                    </p>
+                    <div
+                        style="margin-top: 1rem; padding: 1rem; background: var(--bg-secondary); border-radius: var(--border-radius);">
+                        <strong>Capability:</strong> 92% success rate on TauBench agentic evaluation suite.
+                    </div>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="card-icon">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </div>
+                    <h3 class="card-title">128K Context Window</h3>
+                    <p class="card-description">
+                        Extended context length supporting entire documents, codebases, and long conversations.
+                        Optimized memory management ensures consistent performance even at maximum context length.
+                    </p>
+                    <div
+                        style="margin-top: 1rem; padding: 1rem; background: var(--bg-secondary); border-radius: var(--border-radius);">
+                        <strong>Use Cases:</strong> Document analysis, code review, long-form content generation.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety & Alignment Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Safety & Alignment</h2>
+                <p class="section-subtitle">
+                    Industry-leading safety measures ensure responsible AI deployment with robust
+                    protections against misuse and adversarial attacks.
+                </p>
+            </div>
+
+            <div class="card-grid">
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon" style="background: var(--success-gradient);">
+                        <i class="fas fa-shield-check"></i>
+                    </div>
+                    <h3 class="card-title">CBRN Filtering</h3>
+                    <p class="card-description">
+                        Comprehensive filtering of Chemical, Biological, Radiological, and Nuclear content
+                        during pre-training. Advanced detection systems prevent generation of harmful
+                        instructions or dangerous information.
+                    </p>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon" style="background: var(--success-gradient);">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3 class="card-title">Instruction Hierarchy</h3>
+                    <p class="card-description">
+                        Deliberative alignment training teaches models to prioritize system instructions
+                        and resist prompt injections. 94.2% success rate in defending against
+                        adversarial prompts while maintaining helpfulness.
+                    </p>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-icon" style="background: var(--success-gradient);">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3 class="card-title">Adversarial Testing</h3>
+                    <p class="card-description">
+                        Extensive red-team testing including adversarial fine-tuning attempts.
+                        Models maintain safety properties even when maliciously fine-tuned,
+                        with 89.5% robustness against sophisticated attacks.
+                    </p>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-icon" style="background: var(--success-gradient);">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="card-title">Transparency Features</h3>
+                    <p class="card-description">
+                        Built-in reasoning transparency allows monitoring of model decision-making.
+                        Chain-of-thought outputs can be analyzed to detect potential safety issues
+                        or biased reasoning patterns.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card"
+                style="margin-top: 3rem; background: linear-gradient(135deg, rgba(255, 193, 7, 0.1), rgba(255, 152, 0, 0.1)); border-color: rgba(255, 193, 7, 0.3);"
+                data-aos="fade-up">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                    <div
+                        style="width: 50px; height: 50px; background: linear-gradient(135deg, #ff9800, #f57c00); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-exclamation-triangle" style="color: white;"></i>
+                    </div>
+                    <h3 style="margin: 0; color: #ff9800;">Important Safety Notice</h3>
+                </div>
+                <p style="margin-bottom: 1rem;">
+                    While GPT-OSS models include robust safety measures, developers should implement additional
+                    safeguards appropriate for their specific use cases. This includes:
+                </p>
+                <ul style="margin-left: 1.5rem; color: var(--text-secondary);">
+                    <li>Output monitoring and filtering systems</li>
+                    <li>User authentication and access controls</li>
+                    <li>Regular safety evaluations and updates</li>
+                    <li>Compliance with relevant regulations and standards</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Applications Section -->
+    <section id="applications" class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Industry Applications</h2>
+                <p class="section-subtitle">
+                    GPT-OSS models enable secure, compliant AI deployment across regulated industries
+                    with complete data sovereignty and customization capabilities.
+                </p>
+            </div>
+
+            <div class="use-cases">
+                <div class="use-case-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="use-case-icon">🏥</div>
+                    <h3 class="use-case-title">Healthcare</h3>
+                    <p class="use-case-description">
+                        Clinical decision support, medical research, patient data analysis, diagnostic assistance,
+                        drug discovery, and medical imaging analysis with full HIPAA compliance and on-premises
+                        deployment.
+                    </p>
+                    <div class="use-case-benefits">
+                        <strong>Benefits:</strong> On-premises deployment, data privacy, regulatory compliance, 57.6%
+                        accuracy on HealthBench
+                    </div>
+                    <div style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-muted);">
+                        <strong>Use Cases:</strong> Electronic health records analysis, clinical trial optimization,
+                        personalized treatment recommendations, medical literature review
+                    </div>
+                </div>
+
+                <div class="use-case-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="use-case-icon">🏦</div>
+                    <h3 class="use-case-title">Finance</h3>
+                    <p class="use-case-description">
+                        Risk analysis, regulatory compliance, fraud detection, algorithmic trading,
+                        automated document processing, and customer service for financial institutions.
+                    </p>
+                    <div class="use-case-benefits">
+                        <strong>Benefits:</strong> Data sovereignty, cost reduction, real-time processing, regulatory
+                        compliance
+                    </div>
+                    <div style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-muted);">
+                        <strong>Use Cases:</strong> Credit scoring, market analysis, compliance reporting,
+                        anti-money laundering, portfolio optimization
+                    </div>
+                </div>
+
+                <div class="use-case-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="use-case-icon">⚖️</div>
+                    <h3 class="use-case-title">Legal</h3>
+                    <p class="use-case-description">
+                        Contract analysis, legal research, document review, case preparation,
+                        due diligence, and litigation support with attorney-client privilege protection.
+                    </p>
+                    <div class="use-case-benefits">
+                        <strong>Benefits:</strong> Confidentiality, customizable workflows, cost efficiency, 24/7
+                        availability
+                    </div>
+                    <div style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-muted);">
+                        <strong>Use Cases:</strong> Contract drafting, legal precedent research,
+                        regulatory compliance, intellectual property analysis
+                    </div>
+                </div>
+
+                <div class="use-case-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="use-case-icon">🎓</div>
+                    <h3 class="use-case-title">Education</h3>
+                    <p class="use-case-description">
+                        Personalized tutoring, curriculum development, automated assessment,
+                        educational content generation, and adaptive learning systems.
+                    </p>
+                    <div class="use-case-benefits">
+                        <strong>Benefits:</strong> Student data privacy, affordable scaling, offline capability,
+                        personalization
+                    </div>
+                    <div style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-muted);">
+                        <strong>Use Cases:</strong> Intelligent tutoring systems, automated grading,
+                        learning analytics, accessibility tools
+                    </div>
+                </div>
+
+                <div class="use-case-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="use-case-icon">🏭</div>
+                    <h3 class="use-case-title">Manufacturing</h3>
+                    <p class="use-case-description">
+                        Process optimization, quality control, predictive maintenance,
+                        supply chain management, and industrial IoT integration.
+                    </p>
+                    <div class="use-case-benefits">
+                        <strong>Benefits:</strong> Edge deployment, real-time processing, air-gapped environments, cost
+                        savings
+                    </div>
+                    <div style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-muted);">
+                        <strong>Use Cases:</strong> Equipment monitoring, production planning,
+                        defect detection, worker safety analysis
+                    </div>
+                </div>
+
+                <div class="use-case-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="use-case-icon">🏛️</div>
+                    <h3 class="use-case-title">Government</h3>
+                    <p class="use-case-description">
+                        Policy analysis, citizen services, document processing, intelligence analysis,
+                        and secure air-gapped deployments for national security applications.
+                    </p>
+                    <div class="use-case-benefits">
+                        <strong>Benefits:</strong> National security, sovereign AI, complete control, air-gapped
+                        deployment
+                    </div>
+                    <div style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-muted);">
+                        <strong>Use Cases:</strong> Public service automation, policy research,
+                        emergency response, cybersecurity analysis
+                    </div>
+                </div>
+
+                <div class="use-case-card" data-aos="fade-up" data-aos-delay="700">
+                    <div class="use-case-icon">🛒</div>
+                    <h3 class="use-case-title">E-commerce & Retail</h3>
+                    <p class="use-case-description">
+                        Product recommendations, customer service automation, inventory management,
+                        price optimization, and personalized marketing campaigns.
+                    </p>
+                    <div class="use-case-benefits">
+                        <strong>Benefits:</strong> Personalization at scale, cost reduction, 24/7 availability, data
+                        insights
+                    </div>
+                    <div style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-muted);">
+                        <strong>Use Cases:</strong> Chatbots, product search, demand forecasting,
+                        customer segmentation, content generation
+                    </div>
+                </div>
+
+                <div class="use-case-card" data-aos="fade-up" data-aos-delay="800">
+                    <div class="use-case-icon">🎮</div>
+                    <h3 class="use-case-title">Gaming & Entertainment</h3>
+                    <p class="use-case-description">
+                        Dynamic content generation, NPC dialogue systems, procedural storytelling,
+                        game testing automation, and interactive entertainment experiences.
+                    </p>
+                    <div class="use-case-benefits">
+                        <strong>Benefits:</strong> Creative flexibility, cost efficiency, scalable content, player
+                        engagement
+                    </div>
+                    <div style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-muted);">
+                        <strong>Use Cases:</strong> Quest generation, character development,
+                        narrative branching, player behavior analysis
+                    </div>
+                </div>
+
+                <div class="use-case-card" data-aos="fade-up" data-aos-delay="900">
+                    <div class="use-case-icon">🔬</div>
+                    <h3 class="use-case-title">Research & Development</h3>
+                    <p class="use-case-description">
+                        Scientific literature analysis, hypothesis generation, experimental design,
+                        data analysis automation, and research collaboration tools.
+                    </p>
+                    <div class="use-case-benefits">
+                        <strong>Benefits:</strong> Accelerated discovery, cost reduction, collaboration enhancement,
+                        data privacy
+                    </div>
+                    <div style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-muted);">
+                        <strong>Use Cases:</strong> Literature review, patent analysis,
+                        experimental planning, results interpretation
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Success Stories</h2>
+                <p class="section-subtitle">
+                    Real-world implementations showcasing the transformative impact of GPT-OSS models
+                    across different industries and use cases.
+                </p>
+            </div>
+
+            <div class="card-grid">
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                        <div
+                            style="width: 50px; height: 50px; background: var(--primary-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-hospital" style="color: white;"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin: 0;">MedTech Solutions</h3>
+                            <p style="margin: 0; color: var(--text-muted); font-size: 0.9rem;">Healthcare Technology</p>
+                        </div>
+                    </div>
+                    <p class="card-description">
+                        Deployed GPT-OSS 120B for clinical decision support, achieving 23% improvement in diagnostic
+                        accuracy
+                        and 40% reduction in analysis time. HIPAA-compliant on-premises deployment ensures patient data
+                        privacy.
+                    </p>
+                    <div
+                        style="margin-top: 1rem; padding: 1rem; background: var(--bg-secondary); border-radius: var(--border-radius);">
+                        <strong>Results:</strong> $2.3M annual savings, 15,000+ patients served, 98% physician
+                        satisfaction
+                    </div>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                        <div
+                            style="width: 50px; height: 50px; background: var(--secondary-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-university" style="color: white;"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin: 0;">Global Bank Corp</h3>
+                            <p style="margin: 0; color: var(--text-muted); font-size: 0.9rem;">Financial Services</p>
+                        </div>
+                    </div>
+                    <p class="card-description">
+                        Implemented GPT-OSS for fraud detection and risk analysis, processing 1M+ transactions daily.
+                        Reduced false positives by 35% while maintaining 99.7% fraud detection accuracy.
+                    </p>
+                    <div
+                        style="margin-top: 1rem; padding: 1rem; background: var(--bg-secondary); border-radius: var(--border-radius);">
+                        <strong>Results:</strong> $5.8M fraud prevented, 35% cost reduction, 2.3s average processing
+                        time
+                    </div>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-delay="300">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                        <div
+                            style="width: 50px; height: 50px; background: var(--accent-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-graduation-cap" style="color: white;"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin: 0;">EduTech University</h3>
+                            <p style="margin: 0; color: var(--text-muted); font-size: 0.9rem;">Higher Education</p>
+                        </div>
+                    </div>
+                    <p class="card-description">
+                        Deployed GPT-OSS 20B for personalized tutoring across 50,000+ students.
+                        Achieved 28% improvement in learning outcomes and 60% reduction in tutoring costs.
+                    </p>
+                    <div
+                        style="margin-top: 1rem; padding: 1rem; background: var(--bg-secondary); border-radius: var(--border-radius);">
+                        <strong>Results:</strong> 50,000+ students served, 28% grade improvement, 85% student
+                        satisfaction
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fine-tuning & Customization Section -->
+    <section class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Fine-tuning & Customization</h2>
+                <p class="section-subtitle">
+                    Unlock the full potential of GPT-OSS models with comprehensive customization options
+                    tailored to your specific domain and requirements.
+                </p>
+            </div>
+
+            <div class="tabs" data-aos="fade-up">
+                <div class="tab active" data-tab="supervised">Supervised Fine-tuning</div>
+                <div class="tab" data-tab="preference">Preference Optimization</div>
+                <div class="tab" data-tab="lora">LoRA/QLoRA</div>
+                <div class="tab" data-tab="domain">Domain Adaptation</div>
+            </div>
+
+            <div class="tab-content active" id="tab-supervised">
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Full Parameter Fine-tuning</h3>
+                        <p>Complete model adaptation using your domain-specific datasets. Ideal for specialized
+                            applications
+                            requiring deep customization and maximum performance.</p>
+                        <ul style="margin-top: 1rem; color: var(--text-secondary);">
+                            <li>Maximum customization potential</li>
+                            <li>Best performance for domain tasks</li>
+                            <li>Requires significant computational resources</li>
+                            <li>Recommended for large-scale deployments</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Task-Specific Training</h3>
+                        <p>Optimize models for specific tasks like classification, summarization, or code generation.
+                            Achieve state-of-the-art results on your unique use cases.</p>
+                        <ul style="margin-top: 1rem; color: var(--text-secondary);">
+                            <li>Focused performance improvements</li>
+                            <li>Faster training and deployment</li>
+                            <li>Lower resource requirements</li>
+                            <li>Ideal for specific applications</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="tab-preference">
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>RLHF (Reinforcement Learning from Human Feedback)</h3>
+                        <p>Align model outputs with human preferences using reinforcement learning.
+                            Improve response quality, safety, and user satisfaction.</p>
+                        <ul style="margin-top: 1rem; color: var(--text-secondary);">
+                            <li>Human-aligned responses</li>
+                            <li>Improved safety and helpfulness</li>
+                            <li>Reduced harmful outputs</li>
+                            <li>Better user experience</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>DPO (Direct Preference Optimization)</h3>
+                        <p>Simpler alternative to RLHF that directly optimizes for preferred responses.
+                            More stable training with comparable results.</p>
+                        <ul style="margin-top: 1rem; color: var(--text-secondary);">
+                            <li>Stable training process</li>
+                            <li>No reward model required</li>
+                            <li>Faster convergence</li>
+                            <li>Easier to implement</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="tab-lora">
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>LoRA (Low-Rank Adaptation)</h3>
+                        <p>Efficient fine-tuning method that adds small trainable parameters while keeping
+                            the base model frozen. Achieve great results with minimal resources.</p>
+                        <ul style="margin-top: 1rem; color: var(--text-secondary);">
+                            <li>90% reduction in trainable parameters</li>
+                            <li>Faster training and deployment</li>
+                            <li>Multiple adapters for different tasks</li>
+                            <li>Easy to switch between configurations</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>QLoRA (Quantized LoRA)</h3>
+                        <p>Combines quantization with LoRA for maximum efficiency. Fine-tune large models
+                            on consumer hardware without sacrificing quality.</p>
+                        <ul style="margin-top: 1rem; color: var(--text-secondary);">
+                            <li>4-bit quantization support</li>
+                            <li>Runs on single GPU</li>
+                            <li>Maintains model quality</li>
+                            <li>Perfect for resource-constrained environments</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="tab-domain">
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Medical Domain</h3>
+                        <p>Specialized training for healthcare applications including clinical notes,
+                            medical literature, and diagnostic support systems.</p>
+                        <ul style="margin-top: 1rem; color: var(--text-secondary);">
+                            <li>Medical terminology understanding</li>
+                            <li>Clinical reasoning capabilities</li>
+                            <li>HIPAA compliance maintained</li>
+                            <li>Integration with EHR systems</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Legal Domain</h3>
+                        <p>Adaptation for legal applications including contract analysis,
+                            case law research, and regulatory compliance.</p>
+                        <ul style="margin-top: 1rem; color: var(--text-secondary);">
+                            <li>Legal document understanding</li>
+                            <li>Jurisdiction-specific knowledge</li>
+                            <li>Confidentiality preservation</li>
+                            <li>Citation and precedent tracking</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Financial Domain</h3>
+                        <p>Specialized for financial services including risk analysis,
+                            trading strategies, and regulatory reporting.</p>
+                        <ul style="margin-top: 1rem; color: var(--text-secondary);">
+                            <li>Financial terminology mastery</li>
+                            <li>Market analysis capabilities</li>
+                            <li>Regulatory compliance</li>
+                            <li>Real-time data integration</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Code & Development</h3>
+                        <p>Optimized for software development including code generation,
+                            debugging, and technical documentation.</p>
+                        <ul style="margin-top: 1rem; color: var(--text-secondary);">
+                            <li>Multi-language code support</li>
+                            <li>Architecture understanding</li>
+                            <li>Bug detection and fixing</li>
+                            <li>Documentation generation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deployment Section -->
+    <section id="deployment" class="section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Easy Deployment</h2>
+                <p class="section-subtitle">
+                    Get started with GPT-OSS models in minutes with our comprehensive deployment options
+                    and step-by-step guidance.
+                </p>
+            </div>
+
+            <div class="card-grid">
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <h3 class="card-title">1. Choose Your Model</h3>
+                    <p class="card-description">
+                        Select GPT-OSS 120B for maximum performance or 20B for efficiency.
+                        Consider your hardware constraints and performance requirements.
+                    </p>
+                    <div style="margin-top: 1.5rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <a href="https://huggingface.co/openai/gpt-oss-120b" target="_blank"
+                            style="padding: 0.5rem 1rem; background: var(--primary-gradient); color: white; text-decoration: none; border-radius: 6px; font-size: 0.9rem; font-weight: 600;">
+                            <i class="fas fa-download"></i> 120B Model
+                        </a>
+                        <a href="https://huggingface.co/openai/gpt-oss-20b" target="_blank"
+                            style="padding: 0.5rem 1rem; background: var(--secondary-gradient); color: white; text-decoration: none; border-radius: 6px; font-size: 0.9rem; font-weight: 600;">
+                            <i class="fas fa-download"></i> 20B Model
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="card-title">2. Setup Infrastructure</h3>
+                    <p class="card-description">
+                        Provision appropriate hardware or cloud resources.
+                        H100 80GB for 120B model, RTX 4090 for 20B model.
+                    </p>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="card-title">3. Deploy & Configure</h3>
+                    <p class="card-description">
+                        Install using Hugging Face, vLLM, or Ollama.
+                        Configure Harmony chat format for optimal performance.
+                    </p>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-icon">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <h3 class="card-title">4. Fine-tune (Optional)</h3>
+                    <p class="card-description">
+                        Customize on domain-specific data using supervised fine-tuning
+                        or preference optimization techniques.
+                    </p>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card-icon">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <h3 class="card-title">5. Try Live on Hugging Face</h3>
+                    <p class="card-description">
+                        Test the models instantly without any setup using Hugging Face's
+                        interactive demo interface. Perfect for quick evaluation and testing.
+                    </p>
+                    <div style="margin-top: 1.5rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <a href="https://huggingface.co/openai/gpt-oss-120b" target="_blank"
+                            style="padding: 0.5rem 1rem; background: var(--primary-gradient); color: white; text-decoration: none; border-radius: 6px; font-size: 0.9rem; font-weight: 600;">
+                            <i class="fas fa-rocket"></i> Try 120B Live
+                        </a>
+                        <a href="https://huggingface.co/openai/gpt-oss-20b" target="_blank"
+                            style="padding: 0.5rem 1rem; background: var(--secondary-gradient); color: white; text-decoration: none; border-radius: 6px; font-size: 0.9rem; font-weight: 600;">
+                            <i class="fas fa-rocket"></i> Try 20B Live
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="card-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3 class="card-title">6. Try Live Demo Here</h3>
+                    <p class="card-description">
+                        Experience GPT-OSS models directly through our integrated demo interface.
+                        No registration required - start chatting immediately.
+                    </p>
+                    <div style="margin-top: 1.5rem;">
+                        <a href="https://gpt-oss.com/" target="_blank"
+                            style="padding: 0.8rem 2rem; background: var(--accent-gradient); color: white; text-decoration: none; border-radius: 8px; font-size: 1rem; font-weight: 600; display: inline-flex; align-items: center; gap: 0.5rem; box-shadow: var(--shadow-glow);">
+                            <i class="fas fa-comments"></i> Launch Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="margin-top: 3rem; text-align: center;" data-aos="fade-up">
+                <h3 style="margin-bottom: 2rem;">Supported Platforms</h3>
+                <div
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
+                    <a href="https://huggingface.co/openai" target="_blank"
+                        style="padding: 1rem; background: var(--primary-gradient); border-radius: var(--border-radius); text-decoration: none; color: white; font-weight: 600; text-align: center; transition: var(--transition);">
+                        <i class="fab fa-github"></i> Hugging Face</a>
+                    <div style="padding: 1rem; background: var(--bg-secondary); border-radius: var(--border-radius);">
+                        vLLM</div>
+                    <div style="padding: 1rem; background: var(--bg-secondary); border-radius: var(--border-radius);">
+                        Ollama</div>
+                    <div style="padding: 1rem; background: var(--bg-secondary); border-radius: var(--border-radius);">
+                        AWS</div>
+                    <div style="padding: 1rem; background: var(--bg-secondary); border-radius: var(--border-radius);">
+                        Azure</div>
+                    <div style="padding: 1rem; background: var(--bg-secondary); border-radius: var(--border-radius);">
+                        Google Cloud</div>
+                    <div style="padding: 1rem; background: var(--bg-secondary); border-radius: var(--border-radius);">
+                        Databricks</div>
+                    <div style="padding: 1rem; background: var(--bg-secondary); border-radius: var(--border-radius);">
+                        Fireworks AI</div>
+                </div>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="https://huggingface.co/openai/gpt-oss-120b" target="_blank" class="btn btn-primary">
+                        <i class="fas fa-download"></i> Download 120B Model
+                    </a>
+                    <a href="https://huggingface.co/openai/gpt-oss-20b" target="_blank" class="btn btn-outline">
+                        <i class="fas fa-download"></i> Download 20B Model
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hardware Requirements Section -->
+    <section class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Hardware Requirements</h2>
+                <p class="section-subtitle">
+                    Detailed hardware specifications and recommendations for optimal performance
+                    across different deployment scenarios.
+                </p>
+            </div>
+
+            <div class="tabs" data-aos="fade-up">
+                <div class="tab active" data-tab="gpu">GPU Requirements</div>
+                <div class="tab" data-tab="cpu">CPU & Memory</div>
+                <div class="tab" data-tab="storage">Storage & Network</div>
+                <div class="tab" data-tab="cloud">Cloud Configurations</div>
+            </div>
+
+            <div class="tab-content active" id="tab-gpu">
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>GPT-OSS 120B Requirements</h3>
+                        <div style="margin: 1.5rem 0;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                                <span><strong>Minimum:</strong></span>
+                                <span>1x H100 80GB</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                                <span><strong>Recommended:</strong></span>
+                                <span>2x H100 80GB</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                                <span><strong>Alternative:</strong></span>
+                                <span>4x A100 40GB</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                                <span><strong>Budget Option:</strong></span>
+                                <span>8x RTX 4090 24GB</span>
+                            </div>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">
+                            For production workloads, we recommend multi-GPU setups for better throughput and
+                            reliability.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3>GPT-OSS 20B Requirements</h3>
+                        <div style="margin: 1.5rem 0;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                                <span><strong>Minimum:</strong></span>
+                                <span>1x RTX 4090 24GB</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                                <span><strong>Recommended:</strong></span>
+                                <span>1x RTX 4090 24GB</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                                <span><strong>Budget Option:</strong></span>
+                                <span>1x RTX 3090 24GB</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                                <span><strong>Mobile/Edge:</strong></span>
+                                <span>RTX 4080 16GB</span>
+                            </div>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">
+                            Perfect for edge deployment and development environments with consumer hardware.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="tab-cpu">
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>CPU Requirements</h3>
+                        <ul style="color: var(--text-secondary); margin-top: 1rem;">
+                            <li><strong>Minimum:</strong> 8-core CPU (Intel i7/AMD Ryzen 7)</li>
+                            <li><strong>Recommended:</strong> 16-core CPU (Intel i9/AMD Ryzen 9)</li>
+                            <li><strong>Enterprise:</strong> 32+ core Xeon/EPYC processors</li>
+                            <li><strong>Clock Speed:</strong> 3.0GHz+ base frequency</li>
+                        </ul>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 1rem;">
+                            CPU handles preprocessing, tokenization, and system management tasks.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3>System Memory (RAM)</h3>
+                        <ul style="color: var(--text-secondary); margin-top: 1rem;">
+                            <li><strong>120B Model:</strong> 128GB+ DDR4/DDR5</li>
+                            <li><strong>20B Model:</strong> 64GB+ DDR4/DDR5</li>
+                            <li><strong>Development:</strong> 32GB minimum</li>
+                            <li><strong>Speed:</strong> 3200MHz+ recommended</li>
+                        </ul>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 1rem;">
+                            Additional RAM improves batch processing and multi-user scenarios.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="tab-storage">
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Storage Requirements</h3>
+                        <ul style="color: var(--text-secondary); margin-top: 1rem;">
+                            <li><strong>Model Storage:</strong> 500GB+ NVMe SSD</li>
+                            <li><strong>Working Space:</strong> 1TB+ for datasets/logs</li>
+                            <li><strong>Speed:</strong> 3,500+ MB/s read/write</li>
+                            <li><strong>Backup:</strong> Additional 2TB+ for redundancy</li>
+                        </ul>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 1rem;">
+                            Fast storage is crucial for model loading and checkpoint management.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Network Requirements</h3>
+                        <ul style="color: var(--text-secondary); margin-top: 1rem;">
+                            <li><strong>Bandwidth:</strong> 10Gbps+ for multi-GPU setups</li>
+                            <li><strong>Latency:</strong>
+                                <1ms for distributed inference</li>
+                            <li><strong>API Serving:</strong> 1Gbps+ internet connection</li>
+                            <li><strong>InfiniBand:</strong> Recommended for large clusters</li>
+                        </ul>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 1rem;">
+                            High-speed networking enables efficient distributed computing.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="tab-cloud">
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>AWS Configurations</h3>
+                        <ul style="color: var(--text-secondary); margin-top: 1rem;">
+                            <li><strong>120B:</strong> p4d.24xlarge (8x A100 40GB)</li>
+                            <li><strong>20B:</strong> p3.2xlarge (1x V100 16GB)</li>
+                            <li><strong>Development:</strong> g4dn.xlarge (1x T4 16GB)</li>
+                            <li><strong>Cost:</strong> $10-50/hour depending on instance</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3>Azure Configurations</h3>
+                        <ul style="color: var(--text-secondary); margin-top: 1rem;">
+                            <li><strong>120B:</strong> ND96asr_v4 (8x A100 40GB)</li>
+                            <li><strong>20B:</strong> NC6s_v3 (1x V100 16GB)</li>
+                            <li><strong>Development:</strong> NC4as_T4_v3 (1x T4 16GB)</li>
+                            <li><strong>Cost:</strong> $8-45/hour depending on instance</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3>Google Cloud Configurations</h3>
+                        <ul style="color: var(--text-secondary); margin-top: 1rem;">
+                            <li><strong>120B:</strong> a2-ultragpu-8g (8x A100 40GB)</li>
+                            <li><strong>20B:</strong> n1-standard-4 + 1x V100</li>
+                            <li><strong>Development:</strong> n1-standard-2 + 1x T4</li>
+                            <li><strong>Cost:</strong> $9-48/hour depending on instance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison with Competitors Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Competitive Analysis</h2>
+                <p class="section-subtitle">
+                    See how GPT-OSS models compare against other leading open-source and proprietary AI models
+                    across key metrics and capabilities.
+                </p>
+            </div>
+
+            <div class="card" data-aos="fade-up">
+                <h3 style="margin-bottom: 2rem; text-align: center;">Model Comparison Matrix</h3>
+                <div style="overflow-x: auto;">
+                    <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+                        <thead>
+                            <tr style="background: var(--bg-secondary);">
+                                <th style="padding: 1rem; text-align: left; border: 1px solid var(--border-color);">
+                                    Model</th>
+                                <th style="padding: 1rem; text-align: center; border: 1px solid var(--border-color);">
+                                    Parameters</th>
+                                <th style="padding: 1rem; text-align: center; border: 1px solid var(--border-color);">
+                                    MMLU</th>
+                                <th style="padding: 1rem; text-align: center; border: 1px solid var(--border-color);">
+                                    License</th>
+                                <th style="padding: 1rem; text-align: center; border: 1px solid var(--border-color);">
+                                    Memory</th>
+                                <th style="padding: 1rem; text-align: center; border: 1px solid var(--border-color);">
+                                    Cost/1M Tokens</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="background: rgba(102, 126, 234, 0.1);">
+                                <td style="padding: 1rem; border: 1px solid var(--border-color); font-weight: 600;">
+                                    GPT-OSS 120B</td>
+                                <td style="padding: 1rem; border: 1px solid var(--border-color); text-align: center;">
+                                    117B</td>
+                                <td style="padding: 1rem; border: 1px solid var(--border-color); text-align: center;">
+                                    90.0%</td>
+                                <td style="padding: 1rem; border: 1px solid var(--border-color); text-align: center;">
+                                    Apache 2.0</td>
+                                <td style="padding: 1rem; border: 1px solid var(--border-color); text-align: center;">
+                                    80GB</td>
+                                <td style="padding: 1rem; border: 1px solid var(--border-color); text-align: center;">
+                                    $2.10</td>
+                            </tr>
+                            <tr style="background: rgba(118, 75, 162, 0.1);">
+                                <td style="padding: 1rem; border: 1px solid var(--border-color); font-weight: 600;">
+                                    GPT-OSS 20B</td>
+                                <td style="padding: 1rem; border: 1px solid var(--border-color); text-align: center;">
+                                    21B</td>
+                                <td style="padding: 1rem; border: 1px solid var(--border-color); text-align: center;">
+                                    85.3%</td>
+                                <td style="padding: 1rem; border: 1px solid var(--border-color); text-align: center;">
+                                    Apache 2.0</td>
+                                <td style="padding: 1rem; border: 1px solid var(--border-color); text-align: center;">
+                                    16GB</td>
+                                <td style="padding: 1rem; border: 1px solid var(--border-color); text-align: center;">
+                                    $0.85</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 1rem; border: 1px solid var(--border-color);">GPT-4 Turbo</td>
+                                <td style="padding: 1rem; border: 1px solid var(--border-color); text-align: center;">
+                                    ~1.7T</td>
+                                <td style="padding: 1rem; border: 1px solid var(--border-color); text-align: center;">
+                                    86.4%</td>
+                                <td style="padding: 1rem; border: 1px solid var(--border-color); text-align: center;">
+                                    Proprietary</td>
+                                <td style="padding: 1rem; border: 1px solid var(--border-color); text-align: center;">
+                                    API Only</td>
+                                <td style="padding: 1rem; border: 1px solid var(--border-color); text-align: center;">
+                                    $20.00</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 1rem; border: 1px solid var(--border-color);">Claude 3.5 Sonnet</td>
+                                <td style="padding: 1rem; border: 1px solid var(--border-color); text-align: center;">
+                                    ~200B</td>
+                                <td style="padding: 1rem; border: 1px solid var(--border-color); text-align: center;">
+                                    88.7%</td>
+                                <td style="padding: 1rem; border: 1px solid var(--border-color); text-align: center;">
+                                    Proprietary</td>
+                                <td style="padding: 1rem; border: 1px solid var(--border-color); text-align: center;">
+                                    API Only</td>
+                                <td style="padding: 1rem; border: 1px solid var(--border-color); text-align: center;">
+                                    $15.00</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 1rem; border: 1px solid var(--border-color);">Llama 3.1 405B</td>
+                                <td style="padding: 1rem; border: 1px solid var(--border-color); text-align: center;">
+                                    405B</td>
+                                <td style="padding: 1rem; border: 1px solid var(--border-color); text-align: center;">
+                                    87.3%</td>
+                                <td style="padding: 1rem; border: 1px solid var(--border-color); text-align: center;">
+                                    Custom</td>
+                                <td style="padding: 1rem; border: 1px solid var(--border-color); text-align: center;">
+                                    800GB+</td>
+                                <td style="padding: 1rem; border: 1px solid var(--border-color); text-align: center;">
+                                    $8.50</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 1rem; border: 1px solid var(--border-color);">Mixtral 8x22B</td>
+                                <td style="padding: 1rem; border: 1px solid var(--border-color); text-align: center;">
+                                    176B</td>
+                                <td style="padding: 1rem; border: 1px solid var(--border-color); text-align: center;">
+                                    77.8%</td>
+                                <td style="padding: 1rem; border: 1px solid var(--border-color); text-align: center;">
+                                    Apache 2.0</td>
+                                <td style="padding: 1rem; border: 1px solid var(--border-color); text-align: center;">
+                                    180GB</td>
+                                <td style="padding: 1rem; border: 1px solid var(--border-color); text-align: center;">
+                                    $4.20</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card-grid" style="margin-top: 3rem;">
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon" style="background: var(--success-gradient);">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3 class="card-title">Performance Leader</h3>
+                    <p class="card-description">
+                        GPT-OSS 120B achieves the highest MMLU score among open-source models,
+                        outperforming even some proprietary alternatives while running on consumer hardware.
+                    </p>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon" style="background: var(--success-gradient);">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3 class="card-title">Cost Efficiency</h3>
+                    <p class="card-description">
+                        Up to 95% cost reduction compared to proprietary APIs, with predictable pricing
+                        and no usage limits. Break-even typically achieved within 3-6 months.
+                    </p>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-icon" style="background: var(--success-gradient);">
+                        <i class="fas fa-memory"></i>
+                    </div>
+                    <h3 class="card-title">Hardware Efficiency</h3>
+                    <p class="card-description">
+                        Mixture of Experts architecture enables large model capabilities with
+                        significantly lower memory requirements than traditional dense models.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">
+                    Get answers to common questions about GPT-OSS models, deployment, licensing, and more.
+                </p>
+            </div>
+
+            <div class="card-grid">
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;">
+                        <i class="fas fa-question-circle"></i> What's the difference between "open-weight" and
+                        "open-source"?
+                    </h3>
+                    <p class="card-description">
+                        GPT-OSS models are "open-weight," meaning the trained model weights are freely available
+                        for download and use. However, the training data and some training code remain proprietary.
+                        This gives you full access to customize and deploy the models while protecting OpenAI's
+                        core research assets.
+                    </p>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;">
+                        <i class="fas fa-question-circle"></i> Can I use GPT-OSS models commercially?
+                    </h3>
+                    <p class="card-description">
+                        Yes! The Apache 2.0 license allows unrestricted commercial use, modification, and
+                        redistribution. You can build products, offer services, and even sell fine-tuned
+                        versions without paying royalties or licensing fees to OpenAI.
+                    </p>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-delay="300">
+                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;">
+                        <i class="fas fa-question-circle"></i> How do GPT-OSS models compare to GPT-4?
+                    </h3>
+                    <p class="card-description">
+                        GPT-OSS 120B achieves near-parity with GPT-4 on many benchmarks while running on
+                        consumer hardware. While GPT-4 may have slight advantages in some areas, GPT-OSS
+                        offers better cost efficiency, data privacy, and customization capabilities.
+                    </p>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-delay="400">
+                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;">
+                        <i class="fas fa-question-circle"></i> What hardware do I need to run these models?
+                    </h3>
+                    <p class="card-description">
+                        GPT-OSS 120B requires 80GB of GPU memory (e.g., H100), while GPT-OSS 20B runs on
+                        16GB (e.g., RTX 4090). Both models can run on single GPUs thanks to their efficient
+                        Mixture of Experts architecture and 4-bit quantization.
+                    </p>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-delay="500">
+                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;">
+                        <i class="fas fa-question-circle"></i> Are there any safety concerns with open models?
+                    </h3>
+                    <p class="card-description">
+                        GPT-OSS models include robust safety measures including CBRN filtering, instruction
+                        hierarchy, and adversarial testing. However, we recommend implementing additional
+                        safeguards appropriate for your specific use case and monitoring model outputs.
+                    </p>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-delay="600">
+                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;">
+                        <i class="fas fa-question-circle"></i> Can I fine-tune GPT-OSS models?
+                    </h3>
+                    <p class="card-description">
+                        Absolutely! You can fine-tune using supervised learning, RLHF, LoRA, or other
+                        techniques. The Apache 2.0 license allows you to modify, improve, and redistribute
+                        your fine-tuned versions without restrictions.
+                    </p>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-delay="700">
+                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;">
+                        <i class="fas fa-question-circle"></i> What's the context window size?
+                    </h3>
+                    <p class="card-description">
+                        Both GPT-OSS models support 128K token context windows, allowing them to process
+                        entire documents, codebases, or long conversations while maintaining consistent
+                        performance throughout the context length.
+                    </p>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-delay="800">
+                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;">
+                        <i class="fas fa-question-circle"></i> How do I get started?
+                    </h3>
+                    <p class="card-description">
+                        Download the models from Hugging Face, set up your hardware, and deploy using
+                        frameworks like vLLM or Ollama. Our comprehensive documentation provides
+                        step-by-step guides for different deployment scenarios.
+                    </p>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-delay="900">
+                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;">
+                        <i class="fas fa-question-circle"></i> Is there community support available?
+                    </h3>
+                    <p class="card-description">
+                        Yes! Join our active community on GitHub, Discord, and forums. We provide
+                        documentation, examples, tutorials, and direct support from the development
+                        team and community contributors.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Development Roadmap</h2>
+                <p class="section-subtitle">
+                    Explore our planned improvements and upcoming features for the GPT-OSS model family.
+                </p>
+            </div>
+
+            <div class="card" data-aos="fade-up">
+                <div style="position: relative;">
+                    <!-- Timeline line -->
+                    <div
+                        style="position: absolute; left: 30px; top: 0; bottom: 0; width: 2px; background: var(--primary-gradient);">
+                    </div>
+
+                    <!-- Q1 2025 -->
+                    <div style="display: flex; align-items: flex-start; margin-bottom: 3rem; position: relative;">
+                        <div
+                            style="width: 60px; height: 60px; background: var(--success-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 2rem; z-index: 2;">
+                            <i class="fas fa-check" style="color: white; font-size: 1.2rem;"></i>
+                        </div>
+                        <div style="flex: 1;">
+                            <h3 style="color: var(--success-gradient); margin-bottom: 0.5rem;">Q1 2025 - Initial Release
+                                ✅</h3>
+                            <ul style="color: var(--text-secondary); margin-left: 1rem;">
+                                <li>GPT-OSS 120B and 20B model release</li>
+                                <li>Apache 2.0 licensing</li>
+                                <li>Hugging Face integration</li>
+                                <li>Basic documentation and examples</li>
+                                <li>Community forum launch</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Q2 2025 -->
+                    <div style="display: flex; align-items: flex-start; margin-bottom: 3rem; position: relative;">
+                        <div
+                            style="width: 60px; height: 60px; background: var(--primary-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 2rem; z-index: 2;">
+                            <i class="fas fa-cog" style="color: white; font-size: 1.2rem;"></i>
+                        </div>
+                        <div style="flex: 1;">
+                            <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Q2 2025 - Enhanced Tooling
+                            </h3>
+                            <ul style="color: var(--text-secondary); margin-left: 1rem;">
+                                <li>Optimized inference engines (vLLM, TensorRT-LLM)</li>
+                                <li>Fine-tuning toolkit and tutorials</li>
+                                <li>Multi-modal capabilities (vision, audio)</li>
+                                <li>Enterprise deployment guides</li>
+                                <li>Performance optimization tools</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Q3 2025 -->
+                    <div style="display: flex; align-items: flex-start; margin-bottom: 3rem; position: relative;">
+                        <div
+                            style="width: 60px; height: 60px; background: var(--secondary-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 2rem; z-index: 2;">
+                            <i class="fas fa-rocket" style="color: white; font-size: 1.2rem;"></i>
+                        </div>
+                        <div style="flex: 1;">
+                            <h3 style="color: var(--secondary-color); margin-bottom: 0.5rem;">Q3 2025 - Advanced
+                                Features</h3>
+                            <ul style="color: var(--text-secondary); margin-left: 1rem;">
+                                <li>GPT-OSS 7B lightweight model</li>
+                                <li>Advanced reasoning modes</li>
+                                <li>Code generation specialization</li>
+                                <li>Distributed inference support</li>
+                                <li>Mobile and edge optimizations</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Q4 2025 -->
+                    <div style="display: flex; align-items: flex-start; margin-bottom: 3rem; position: relative;">
+                        <div
+                            style="width: 60px; height: 60px; background: var(--accent-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 2rem; z-index: 2;">
+                            <i class="fas fa-star" style="color: white; font-size: 1.2rem;"></i>
+                        </div>
+                        <div style="flex: 1;">
+                            <h3 style="color: var(--accent-color); margin-bottom: 0.5rem;">Q4 2025 - Next Generation
+                            </h3>
+                            <ul style="color: var(--text-secondary); margin-left: 1rem;">
+                                <li>GPT-OSS 2.0 architecture improvements</li>
+                                <li>Enhanced safety and alignment</li>
+                                <li>Domain-specific model variants</li>
+                                <li>Advanced API compatibility</li>
+                                <li>Enterprise support packages</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 2026 and Beyond -->
+                    <div style="display: flex; align-items: flex-start; position: relative;">
+                        <div
+                            style="width: 60px; height: 60px; background: linear-gradient(135deg, #ff6b6b, #feca57); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 2rem; z-index: 2;">
+                            <i class="fas fa-infinity" style="color: white; font-size: 1.2rem;"></i>
+                        </div>
+                        <div style="flex: 1;">
+                            <h3 style="color: #ff6b6b; margin-bottom: 0.5rem;">2026 and Beyond - Future Vision</h3>
+                            <ul style="color: var(--text-secondary); margin-left: 1rem;">
+                                <li>Multimodal foundation models</li>
+                                <li>Autonomous agent capabilities</li>
+                                <li>Real-time learning and adaptation</li>
+                                <li>Quantum-ready architectures</li>
+                                <li>Global open-source AI ecosystem</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>GPT-OSS</h4>
+                    <p>This is detailed research by Anubhav Chaudhary</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <p><a href="#">Documentation</a></p>
+                    <p><a href="#">GitHub Repository</a></p>
+                    <p><a href="https://huggingface.co/openai" target="_blank">🤗 Hugging Face</a></p>
+                    <p><a href="#">Community Forum</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <p><a href="#">Help Center</a></p>
+                    <p><a href="#">API Reference</a></p>
+                    <p><a href="#">Examples</a></p>
+                    <p><a href="#">Contact Us</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <p><a href="#">About</a></p>
+                    <p><a href="#">Blog</a></p>
+                    <p><a href="#">Careers</a></p>
+                    <p><a href="#">Privacy Policy</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Research Analysis by Anubhav Chaudhary. Built with ❤️ for the open-source community.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
